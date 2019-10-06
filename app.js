@@ -7,6 +7,9 @@ const port = 3000
 const session = require('express-session')
 const passport = require('passport')
 
+if (process.env.NODE_ENV !== 'production') {      // 如果不是 production 模式
+  require('dotenv').config()                      // 使用 dotenv 讀取 .env 檔案
+}
 
 // 載入 model
 const db = require('./models')
@@ -37,6 +40,7 @@ app.use((req, res, next) => {
 app.use('/', require('./routes/home'))
 app.use('/users', require('./routes/user'))
 app.use('/todos', require('./routes/todo'))
+app.use('/auth', require('./routes/auths'))
 
 app.listen(port, () => {
   console.log(`http://localhost:${port}`)
