@@ -5,9 +5,8 @@
 
 ---
 ## 網頁畫面
-![image]
-![image]
-![image]
+![image](https://github.com/ZhaoHouLin/todo-sequelize/blob/master/DEMO/1.jpg)
+![image](https://github.com/ZhaoHouLin/todo-sequelize/blob/master/DEMO/2.jpg)
 
 ## 此專案用到的套件
 * "bcryptjs": "^2.4.3",
@@ -27,7 +26,7 @@
 
 
 ## 安裝與執行方式
-**1. 執行MyAQL
+**1. 執行MySQL
 
 **2. 打開終端機輸入以下指令複製專案到電腦上**
 ```git=
