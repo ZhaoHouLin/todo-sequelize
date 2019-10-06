@@ -34,7 +34,9 @@ app.use((req, res, next) => {
   next()
 })
 
+app.use('/', require('./routes/home'))
 app.use('/users', require('./routes/user'))
+app.use('/todos', require('./routes/todo'))
 
 app.listen(port, () => {
   console.log(`http://localhost:${port}`)
